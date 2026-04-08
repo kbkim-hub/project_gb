@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세무 업무 통합 관리자</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        :root {
+            --bg: #f8f9fa;
+            --text-dark: #212529;
+            --text-muted: #6c757d;
+            --border: #dee2e6;
+            --white: #ffffff;
+            --accent: #2d3436;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .index-container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .menu-list {
+            list-style: none;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+        }
+
+        .menu-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 25px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .menu-link:hover {
+            border-color: var(--accent);
+            background: #fafafa;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .menu-link .icon {
+            font-size: 18px;
+            margin-right: 15px;
+        }
+
+        .menu-link .arrow {
+            color: var(--border);
+            font-size: 18px;
+        }
+
+        .menu-link:hover .arrow {
+            color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="index-container">
+    <div class="header">
+        <h1>업무 관리 시스템</h1>
+        <p>원하시는 업무 서식을 선택하세요.</p>
+    </div>
+
+    <ul class="menu-list">
+        <li class="menu-item">
+            <a href="종소세 표지.html" class="menu-link">
+                <span><span class="icon">📁</span> 2025년 귀속 종합소득세 신고현황</span>
+                <span class="arrow">→</span>
+            </a>
+        </li>
+
+        </ul>
+
+    <div class="footer">
+        © 2025 Tax Management System
+    </div>
+</div>
+
+</body>
+</html>
