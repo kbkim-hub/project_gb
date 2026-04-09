@@ -14,6 +14,7 @@
             --border: #dee2e6;
             --white: #ffffff;
             --accent: #2d3436;
+            --blue: #2563eb;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,7 +35,6 @@
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border: 1px solid var(--border);
         }
 
         .header {
@@ -43,16 +43,14 @@
         }
 
         .header h1 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 700;
-            color: var(--accent);
-            letter-spacing: -0.5px;
             margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 14px;
             color: var(--text-muted);
+            font-size: 14px;
         }
 
         .menu-list {
@@ -66,8 +64,7 @@
         .menu-link {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 18px 25px;
+            padding: 18px 24px;
             background: var(--white);
             border: 1px solid var(--border);
             border-radius: 8px;
@@ -78,15 +75,19 @@
         }
 
         .menu-link:hover {
-            border-color: var(--accent);
+            border-color: var(--blue);
             background: #fafafa;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
         .menu-link .icon {
-            font-size: 18px;
+            font-size: 20px;
             margin-right: 15px;
+        }
+
+        .menu-link .title {
+            flex-grow: 1;
         }
 
         .menu-link .arrow {
@@ -95,7 +96,7 @@
         }
 
         .menu-link:hover .arrow {
-            color: var(--accent);
+            color: var(--blue);
         }
 
         .footer {
@@ -116,16 +117,17 @@
 
     <ul class="menu-list">
         <li class="menu-item">
-            <a href="종소세 표지.html" class="menu-link">
-                <span><span class="icon">📁</span> 2025년 귀속 종합소득세 신고현황</span>
+            <a href="종합소득세 표지 버전2" class="menu-link">
+                <span class="icon">📄</span>
+                <span class="title">종합소득세 신고관리 시스템 (버전2)</span>
                 <span class="arrow">→</span>
             </a>
         </li>
-
+        
         </ul>
 
     <div class="footer">
-        © 2025 Tax Management System
+        &copy; 2026 Tax Management System. All rights reserved.
     </div>
 </div>
 
